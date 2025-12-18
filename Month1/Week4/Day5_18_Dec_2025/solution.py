@@ -7,6 +7,7 @@ class Node:
         
 class Solution:
     def diameter(self, root):
+        self.diameter = 0
         if root is None:
             return 0
         def height(node):
