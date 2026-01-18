@@ -1,5 +1,5 @@
 
-## **Month 3: ML + System Design + Integrated Projects (18 Jan – 22 Feb 2026)**
+## **Month 3: ML + System Design + Integrated Projects (18 Jan – 14 Feb 2026)**
 
 ---
 
@@ -57,7 +57,7 @@
 
 ---
 
-### **Week 12 (8 Feb – 22 Feb) → Integrated Projects + Velox Prep**
+### **Week 12 (8 Feb – 14 Feb) → Integrated Projects + Velox Prep**
 
 **Goal:** Combine ML, async backend, caching, and system design; start Velox planning
 
