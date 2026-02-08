@@ -4,7 +4,7 @@ app = VeloxApp()
 
 @app.route("/hello")
 async def hello(request):
-    return json({"message": "Hello from Velox 🚀"})
+    return json({"message": "Hello from Velox"})
 
 @app.route("/ping")
 async def ping(request):
