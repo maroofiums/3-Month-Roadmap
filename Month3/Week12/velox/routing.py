@@ -13,7 +13,7 @@ class Router:
                 wrapper,
                 path,
                 methods=methods,
-                name=route_name  # 🔑 UNIQUE ROUTE NAME
+                name=route_name 
             )
             return func
         return decorator
