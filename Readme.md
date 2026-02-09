@@ -40,7 +40,7 @@
 | 9 | 18 Jan – 24 Jan | ML Basics | Numpy, Pandas, Logistic Regression, Decision Tree, KNN | Train small models, feature engineering |
 | 10 | 25 Jan – 31 Jan | ML API Integration | Serve model via FastAPI, async calls | ML prediction API, caching predictions |
 | 11 | 1 Feb – 7 Feb | System Design Lite | DB indexing, sharding, queues, rate limiter | URL shortener / notification system |
-| 12 | 8 Feb – 22 Feb | Integrated Projects | Combine Backend + ML + System Design | Final project → GitHub showcase |
+| 12 | 8 Feb – 14 Feb | Velox | prepare Velox intitial Version | Final project → GitHub showcase |
 
 **Projects / Experiments:**  
 - ML API + async + cache  
