@@ -1,0 +1,118 @@
+================================================================================
+                    VELOX FRAMEWORK - HOW TO RUN
+================================================================================
+
+EASIEST WAY TO START THE SERVER:
+---------------------------------
+
+From the velox_project directory, run:
+
+    python run_server.py
+
+OR (if in demo directory):
+
+    cd demo
+    python main.py
+
+
+STEP-BY-STEP INSTRUCTIONS:
+--------------------------
+
+1. Open Command Prompt or Terminal
+
+2. Navigate to the velox_project folder:
+   
+   cd C:\Users\M.Maroof\Downloads\velox_project
+
+3. Run the server:
+   
+   python run_server.py
+
+4. You should see:
+   
+   Starting Velox Demo Server...
+   Velox server running on http://127.0.0.1:8000
+   Installed apps: ['apps.users']
+
+5. Open a NEW command prompt and test:
+
+   curl http://127.0.0.1:8000/hello
+
+
+TESTING THE API:
+----------------
+
+Once the server is running, test these endpoints:
+
+1. GET /hello
+   curl http://127.0.0.1:8000/hello
+
+2. Create a user (POST /users)
+   curl -X POST http://127.0.0.1:8000/users -H "Content-Type: application/json" -d "{\"name\":\"John\",\"email\":\"john@test.com\"}"
+
+3. List users (GET /users)
+   curl http://127.0.0.1:8000/users
+
+4. Get user by ID (GET /users/1)
+   curl http://127.0.0.1:8000/users/1
+
+5. Update user (PUT /users/1)
+   curl -X PUT http://127.0.0.1:8000/users/1 -H "Content-Type: application/json" -d "{\"name\":\"John Updated\"}"
+
+6. Delete user (DELETE /users/1)
+   curl -X DELETE http://127.0.0.1:8000/users/1
+
+
+WINDOWS WITHOUT CURL:
+---------------------
+
+If curl is not available, use PowerShell:
+
+# Test GET
+Invoke-WebRequest -Uri http://127.0.0.1:8000/hello
+
+# Or just open in browser:
+http://127.0.0.1:8000/hello
+http://127.0.0.1:8000/users
+
+
+TROUBLESHOOTING:
+----------------
+
+Problem: "ModuleNotFoundError: No module named 'velox'"
+Solution: Make sure you run from the velox_project directory:
+          cd C:\Users\M.Maroof\Downloads\velox_project
+          python run_server.py
+
+Problem: Port already in use
+Solution: Stop any other server on port 8000, or edit run_server.py
+          and change port=8000 to port=8080
+
+Problem: Python not found
+Solution: Make sure Python 3.7+ is installed and in your PATH
+
+
+AUTOMATED TESTS:
+----------------
+
+To run all automated tests:
+
+    python test_velox.py
+
+This will automatically:
+- Start the server
+- Run all API tests
+- Show results
+- Stop the server
+
+
+NEED HELP?
+----------
+
+Check these files for more information:
+- README.md         - Full documentation
+- QUICKSTART.md     - Quick start guide
+- CODE_LISTING.md   - All source code
+
+
+================================================================================

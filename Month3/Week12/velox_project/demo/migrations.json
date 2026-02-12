@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "models": [
+        {
+          "name": "User",
+          "table": "users",
+          "fields": {
+            "id": {
+              "type": "INTEGER",
+              "primary_key": true,
+              "unique": false,
+              "auto_increment": true
+            },
+            "name": {
+              "type": "TEXT",
+              "primary_key": false,
+              "unique": false,
+              "auto_increment": false
+            },
+            "email": {
+              "type": "TEXT",
+              "primary_key": false,
+              "unique": true,
+              "auto_increment": false
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
